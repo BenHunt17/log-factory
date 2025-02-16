@@ -1,50 +1,5 @@
-# Welcome to your Expo app 👋
+# Log Factory
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+The motivation behind this app is my lack of organisation and logging for certain aspects of my life. An example of this is the gym, I currently do not log my progress which I need to do in order to keep motivated and cultivate goals. Using traditional means like a notes app or notebook is too much work, hard to organise and hard to analyse many logs. Add on the fact that there are other areas of my life to log as well and the natural tendency for the logs' schema to change over time, I need a centralised log recording solution which can enforce defined schemas I set while also allowing for adaptations to those schemas over time.
 
-## Get started
-
-1. Install dependencies
-
-   ```bash
-   npm install
-   ```
-
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+The purpose of this app is to facilitate the process of logging recurring structured data to a database with minimal effort from me. This structured data is defined by schemas which I can define in corresponding markdown files which the app can interpret. The app can then dynamically show an appropriate form which I can use to input data before persisting it to a database. The limitation of using schemas offers the best of both worlds, it enforces the same structure and maintains data integrity which makes future analysis feasible. At the same time, new schemas can be added and existing ones can be updated to new versions which means that I can redfine what I need to log whenever I want without creating inconsistency in the database.
